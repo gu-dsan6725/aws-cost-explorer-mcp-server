@@ -34,7 +34,7 @@ This tool provides a convenient way to analyze and visualize AWS cloud spending 
 
 2. Clone this repository:
    ```
-   git clone https://github.com/yourusername/aws-cost-explorer-mcp.git
+   git clone https://github.com/aarora79/aws-cost-explorer-mcp.git
    cd aws-cost-explorer-mcp
    ```
 
@@ -43,11 +43,6 @@ This tool provides a convenient way to analyze and visualize AWS cloud spending 
    uv venv && source .venv/bin/activate && uv pip sync pyproject.toml
    ```
    
-   Or for development installation:
-   ```
-   uv pip install --system -e .
-   ```
-
 4. Configure your AWS credentials:
    ```
    mkdir -p ~/.aws
@@ -103,7 +98,7 @@ If you prefer to run the server directly without Docker, you can use UV:
       "command": "uv",
       "args": [
           "--directory",
-          "/path/to/aws_cost_explorer_mcp_server",
+          "/path/to/aws-cost-explorer-mcp-server",
           "run",
           "server.py"
       ]
