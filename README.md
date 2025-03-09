@@ -2,6 +2,8 @@
 
 A command-line interface and API for interacting with AWS Cost Explorer data through [Anthropic's MCP (Model Control Protocol)](https://www.anthropic.com/news/model-context-protocol).
 
+[![AWS Cost Explorer MCP Server Deep Dive](https://img.youtube.com/vi/WuVOmYLRFmI/0.jpg)](https://youtu.be/WuVOmYLRFmI)
+
 ## Overview
 
 This tool provides a convenient way to analyze and visualize AWS cloud spending data using Anthropic's Claude model as an interactive interface. It functions as an MCP server that exposes AWS Cost Explorer API functionality to Claude, allowing you to ask questions about your AWS costs in natural language.
