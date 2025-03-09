@@ -1,6 +1,6 @@
 # AWS Cost Explorer MCP
 
-A command-line interface and API for interacting with AWS Cost Explorer data through [Anthropic's MCP (Model Control Protocol)](https://www.anthropic.com/news/mcp).
+A command-line interface and API for interacting with AWS Cost Explorer data through [Anthropic's MCP (Model Control Protocol)](https://www.anthropic.com/news/model-context-protocol).
 
 ## Overview
 
@@ -114,8 +114,7 @@ Make sure to replace the directory path with the actual path to your repository 
 The server exposes the following tools that Claude can use:
 
 1. **`get_ec2_spend_last_day()`**: Retrieves EC2 spending data for the previous day
-2. **`get_service_spend_last_30_days()`**: Provides a breakdown of spending by service over the last month
-3. **`get_detailed_breakdown_by_day(days=7)`**: Delivers a comprehensive analysis of costs by region, service, and instance type
+1. **`get_detailed_breakdown_by_day(days=7)`**: Delivers a comprehensive analysis of costs by region, service, and instance type
 
 ### Example Queries
 
