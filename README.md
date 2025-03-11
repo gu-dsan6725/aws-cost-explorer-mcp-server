@@ -155,6 +155,74 @@ To extend the functionality:
 3. Implement the AWS Cost Explorer API calls
 4. Format the results for easy readability
 
+# Google Search Tool (Extra Credit)
+
+As an additional feature, this project includes a Google Search Tool that allows Claude to perform web searches and fetch webpage content. This is an extra credit assignment.
+
+## Overview
+
+This tool enables querying Google search for relevant URLs and retrieving webpage text content for further analysis. It integrates seamlessly with Claude via MCP.
+
+## Features
+
+- **Google Search Integration**: Fetch top search results for a given query.
+- **Webpage Text Extraction**: Retrieve and process webpage content into plain text format.
+- **MCP Integration**: Exposed as an MCP tool for Claude to use.
+
+## Implementation
+
+To enable this feature, create a new file named `google_search_server.py`. (*Hint: You can take Lab 5 as a starting point/resource.*)
+
+### Dependencies
+
+Ensure the following dependencies are installed in your `pyproject.toml`:
+
+```toml
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "googlesearch-python",
+    "mcp[cli]"
+]
+```
+
+### Configuration
+
+Update your Claude MCP configuration file (`.claude-mcp-config.json`) to include the Google Search Tool:
+
+```json
+{
+  "mcpServers": {
+    "google_search_tool": {
+      "command": "uv",
+      "args": [
+          "--directory",
+          "/path/to/aws-cost-explorer-mcp-server",
+          "run",
+          "google_search_server.py"
+      ]
+    }
+  }
+}
+```
+
+Replace `/path/to/aws-cost-explorer-mcp-server/` with the actual directory path of your project.
+
+### Example Queries
+
+Once connected to Claude, you can ask:
+
+- "Search for the best machine learning frameworks in 2025."
+- "Find the latest research papers on generative AI."
+- "Retrieve content from the first result of a Google search on climate change policies."
+
+## Helpful links
+
+- [For Server Developers](https://modelcontextprotocol.io/quickstart/server#claude-for-desktop-integration-issues)
+- [None of this is working, what do I do?](https://modelcontextprotocol.io/quickstart/user#none-of-this-is-working-what-do-i-do)
+- [MCP Tools Debugging Guide](https://modelcontextprotocol.io/docs/tools/debugging)
+
+
 ## License
 
 [MIT License](LICENSE)
