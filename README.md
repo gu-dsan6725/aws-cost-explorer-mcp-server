@@ -171,7 +171,8 @@ This tool enables querying Google search for relevant URLs and retrieving webpag
 
 ## Implementation
 
-To enable this feature, create a new file named `google_search_server.py`. (*Hint: You can take Lab 5 as a starting point/resource.*)
+To enable this feature, create a new file named `google_search_server.py`. (*Hint: You can take Lab 5 as a starting point/resource.*) <br>
+**Please commit and push this file to the repo as part of the final submission**
 
 ### Dependencies
 
