@@ -213,9 +213,17 @@ Replace `/path/to/aws-cost-explorer-mcp-server/` with the actual directory path 
 
 Once connected to Claude, you can ask:
 
-- "Search for the best machine learning frameworks in 2025."
-- "Find the latest research papers on generative AI."
-- "Retrieve content from the first result of a Google search on climate change policies."
+- "Search google for the best machine learning frameworks in 2025."
+- "Search google to find the latest research papers on generative AI."
+- "Search google to retrieve content from the first result of a Google search on climate change policies."
+
+## Deliverables
+
+- google_search_server.py
+- screenshot of your mcp tool results when used with claude:
+  
+![Screenshot 2025-03-12 at 10 35 55 PM](https://github.com/user-attachments/assets/44b4f9e1-3dbc-4c22-9784-30b6a1118b38)
+
 
 ## Helpful links
 
